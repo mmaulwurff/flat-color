@@ -53,7 +53,8 @@ class fc_EventHandler : EventHandler
       {
         for (int part = Side.Top; part <= Side.Bottom; ++part)
         {
-          for (int s = 0; s < 2; ++s)
+          int sidesToPaint = (l.flags & Line.ML_FIRSTSIDEONLY) ? 1 : 2;
+          for (int s = 0; s < sidesToPaint; ++s)
           {
             if (l.sidedef[s])
             {
