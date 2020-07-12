@@ -6,5 +6,5 @@ set -e
 filename=flat-color.pk3
 
 rm  -f $filename
-zip -R $filename "*.md" "*.txt" "*.zs" "*.pal"
 gzdoom $filename "$@"
+zip -R $filename "*.md" "*.txt" "*.zs" "*.pal" "*.png"
