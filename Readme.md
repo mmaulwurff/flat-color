@@ -1,5 +1,7 @@
 # Flat Color
 
+A mod for GZDoom that replaces all textures with flat color, retaining playability.
+
 ## Color codes
 
 - blue: non-interactive items, player, barrels, projectiles
