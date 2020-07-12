@@ -1,5 +1,9 @@
 gameinfo
 {
   AddEventHandlers = "fc_EventHandler"
+
   ForceTextInMenus = true
+
+  DefaultBloodColor         = "000000"
+  DefaultBloodParticleColor = "000000"
 }

@@ -29,18 +29,13 @@ class fc_EventHandler : EventHandler
 
     thing.A_SetRenderStyle(thing.alpha, STYLE_Stencil);
 
-    if (thing.bIsMonster)
-    {
-      thing.SetShade("FF0000");
-    }
-    else if (thing is "Inventory")
-    {
-      thing.SetShade("00FF00");
-    }
-    else
-    {
-      thing.SetShade("0000FF");
-    }
+    String shade = "0000FF";
+    if      (thing.bIsMonster)      shade = "FF0000";
+    else if (thing is "Inventory")  shade = "00FF00";
+    else if (thing is "Blood")      shade = "000000";
+    else if (thing is "BulletPuff") shade = "FFFFFF";
+
+    thing.SetShade(shade);
   }
 
   override
