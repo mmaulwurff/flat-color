@@ -72,6 +72,16 @@ class fc_EventHandler : EventHandler
       Side s = Level.Sides[i];
       s.light /= 2;
     }
+
+    uint nSectors = Level.Sectors.size();
+    for (uint i = 0; i < nSectors; ++i)
+    {
+      Sector s = Level.Sectors[i];
+      if (s.damageAmount > 0)
+      {
+        s.setAdditiveColor(Sector.floor, "800080");
+      }
+    }
   }
 
 } // class fc_EventHandler
