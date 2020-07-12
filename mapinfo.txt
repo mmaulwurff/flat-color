@@ -1,0 +1,5 @@
+gameinfo
+{
+  AddEventHandlers = "fc_EventHandler"
+  ForceTextInMenus = true
+}
